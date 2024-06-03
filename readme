@@ -1,0 +1,62 @@
+# Hall and Room Booking API
+
+This project is a backend API for managing hall and room bookings. It allows creating, updating, and retrieving booking information for both halls and rooms.
+
+## Features
+
+- Create a Hall
+- Create a Room
+- Book a Hall
+- Book a Room
+- Retrieve all Bookings for a Hall
+- Retrieve all Bookings for a Room
+- Change Booking for a Hall
+- Change Booking for a Room
+- Retrieve Booking History for a Hall
+- Retrieve Booking History for a Room
+
+## Technologies Used
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+   https://github.com/SuriyaPriyanS/NodeDay2Task
+    cd hall-room-booking
+    ```
+
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Create a `.env` file in the root of the project and add your MongoDB connection string:
+    ```env
+    MONGO_URI=mongodb://localhost:27017/nodeTask2
+    ```
+
+4. Start the server:
+    ```bash
+    npm run dev
+    ```
+
+The server will run on `http://localhost:4000`.
+
+## API Endpoints
+
+### Create a Hall
+
+- **URL**: `/api/hall`
+- **Method**: `POST`
+- **Body**:
+  ```json
+  {
+    "name": "Hall Name",
+    "location": "Location",
+    "capacity": 100
+  }
